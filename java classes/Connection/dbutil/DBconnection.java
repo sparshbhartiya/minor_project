@@ -19,6 +19,7 @@ public class DBconnection {
         try
         {
             Class.forName("oracle.jdbc.OracleDriver");
+             //DriverManager.registerDriver(new com.mysql.jdbc.Driver());
             conn=DriverManager.getConnection("jdbc:oracle:thin:@//LAPTOP-5DC8PLFO:1521/XE","project1","saurabh"); 
             System.out.println("Connected Successfully to DB");
         }
